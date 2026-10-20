@@ -1,0 +1,46 @@
+{
+  "name": "task-manager-cli",
+  "version": "1.0.0",
+  "description": "A fast, dependency-free personal task manager for the terminal: projects, tags, natural-language due dates, recurring tasks, undo and import/export.",
+  "keywords": [
+    "cli",
+    "todo",
+    "tasks",
+    "task-manager",
+    "productivity",
+    "gtd",
+    "terminal"
+  ],
+  "homepage": "https://github.com/bismarkkoima/task-manager-cli#readme",
+  "bugs": {
+    "url": "https://github.com/bismarkkoima/task-manager-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bismarkkoima/task-manager-cli.git"
+  },
+  "license": "MIT",
+  "author": "Bismark Koima <bismarkkoima844@gmail.com>",
+  "main": "src/cli.js",
+  "bin": {
+    "task": "bin/task.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
